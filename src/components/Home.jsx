@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import image1 from "../assets/pexels-edmond-dantes-4345357.jpg"
+import image2 from "../assets/pexels-tony-schnagl-5586315.jpg"
 
 export default function Home() {
     return (
@@ -32,12 +34,12 @@ export default function Home() {
                 </div>
 
                 <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-                    <img className="w-96" src="../assets/pexels-tony-schnagl-5586315.jpg" alt="image1" />
+                    <img className="w-96" src={image2} alt="image1" />
                 </div>
             </aside>
 
             <div className="grid  place-items-center sm:mt-20">
-                <img className="sm:w-96 w-48" src="../assets/pexels-edmond-dantes-4345357.jpg" alt="image2" />
+                <img className="sm:w-96 w-48" src={image1} alt="image2" />
             </div>
 
             <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">Lorem Ipsum Yojo</h1>
